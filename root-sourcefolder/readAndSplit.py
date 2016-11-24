@@ -1,4 +1,4 @@
-from model.Athlete import *;
+from model.Athlete import Athlete;
 
 #LE as parciais de tempo dos atletas atraves dos arquivos e calcula os 3 melhores tempos
 print('===ReadFiles===')
@@ -30,5 +30,5 @@ print(sorted(james)) #Print copy list, keep original list
 
 a = Athlete('Almeida')
 a.itens
-print(sorted(set([Athlete.__padronize__(item) for item in james])))
+print(sorted(set([a.__padronize__(item) for item in james])))
 
